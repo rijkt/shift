@@ -22,7 +22,7 @@
   (let [matches (map (fn [rule] [(re-seq rule actual-path) (get rules rule)]) (keys rules))
         normalized (first (remove (comp nil? first) matches))]
     (if (not (nil? normalized))
-      (let [[source & params] (second (ffirst  normalized)) ; todo: make sure it's size 1e
+      (let [[source & params] (ffirst  normalized) ; todo: make sure it's size 1e
             [rule-source rule-target] (fnext normalized)
             replacements (make-param-mapping rule-source params)]
         (reduce #(apply s/replace %1 %2) rule-target (partition 2 replacements)))
