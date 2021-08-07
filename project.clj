@@ -7,7 +7,7 @@
                  [org.clojure/clojure "1.10.1"]
                  [ring/ring-core "1.9.4"]
                  [com.novemberain/langohr "5.2.0"]
-                 ]
+                 [org.clojure/data.json "2.4.0"]]
   :main ^:skip-aot shift.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all
