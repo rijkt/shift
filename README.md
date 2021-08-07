@@ -1,10 +1,15 @@
 # shift
 
-FIXME: description
+This project provides a way to automatically move finished Transmission downloads into specified target directories. This is achieved by configuring rules by which files should be moved.
 
 ## Installation
 
-Download from http://example.com/FIXME.
+### Prerequisites
+Set the following transmission options:
+    script-torrent-done-enabled: true
+    script-torrent-done-filename: Path to notifier script (TODO: add path)
+
+FIXME: installation guide (Docker and native)
 
 ## Usage
 
@@ -16,21 +21,9 @@ FIXME: explanation
 
 FIXME: listing of options this app accepts.
 
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
 ## License
 
-Copyright © 2021 FIXME
+Copyright © 2021 rijkt
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at
