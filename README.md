@@ -6,6 +6,7 @@ This project provides a way to automatically move finished Transmission download
 
 ### Prerequisites
 Set the following transmission options:
+
     script-torrent-done-enabled: true
     script-torrent-done-filename: Path to notifier script (TODO: add path)
 
