@@ -7,12 +7,12 @@
                  #"^source2/(\w+)/?" ["source2/{name}" "/target2/{name}"]
                  #"^mixed/(\w+)/(\w+)/?" ["mixed/{b}/{a}" "order/{a}/{b}"]})
 
-(deftest single-variable-path-tset
+(deftest single-variable-path-test
   (testing "Get a path with a single parameter"
     (is (= (get-target-path "source2/a" test-rules) "/target2/a"))))
 
 
-(deftest two-variable-path-tset
+(deftest two-variable-path-test
   (testing "Get a path with two parameters"
     (is (= (get-target-path "source1/a/b" test-rules) "/target1/a/b"))))
 
