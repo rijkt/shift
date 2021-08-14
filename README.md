@@ -12,6 +12,9 @@ Set the following transmission options:
 
 FIXME: installation guide (Docker and native)
 
+    docker network create shift-net
+    docker run -d --hostname shift-host --name shift-mq --network shift-net -p 5672:5672 -p 15672:15672 rabbitmq:3
+
 ## Usage
 
 FIXME: explanation
